@@ -16,4 +16,8 @@ export class SmsController {
   send(@Payload() data: any) {
     return this.smsService.sendSms(data);
   }
+
+  getHello() {
+    return 'Hello World!';
+  }
 }

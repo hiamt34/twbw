@@ -1,9 +1,7 @@
 import { QUEUE, SERVICE, SMS_COMMAND } from '@namnh240795/events';
 import {
   OnQueueActive,
-  OnQueueError,
   OnQueueFailed,
-  OnQueueStalled,
   OnQueueWaiting,
   Process,
   Processor,
