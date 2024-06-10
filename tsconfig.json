@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@namnh240795/sendmail": [
+        "libs/sendmail/src"
+      ],
+      "@namnh240795/sendmail/*": [
+        "libs/sendmail/src/*"
+      ],
+      "@namnh240795/password-hashing": [
+        "libs/password-hashing/src"
+      ],
+      "@namnh240795/password-hashing/*": [
+        "libs/password-hashing/src/*"
+      ],
+      "@namnh240795/decorators/authorization": [
+        "libs/decorators/authorization/src"
+      ],
+      "@namnh240795/decorators/authorization/*": [
+        "libs/decorators/authorization/src/*"
+      ],
+      "@namnh240795/prisma": [
+        "libs/prisma/src"
+      ],
+      "@namnh240795/prisma/*": [
+        "libs/prisma/src/*"
+      ],
+      "@namnh240795/healthcheck": [
+        "libs/healthcheck/src"
+      ],
+      "@namnh240795/healthcheck/*": [
+        "libs/healthcheck/src/*"
+      ],
+      "@namnh240795/events": [
+        "libs/events/src"
+      ],
+      "@namnh240795/events/*": [
+        "libs/events/src/*"
+      ]
+    }
+  }
+}
