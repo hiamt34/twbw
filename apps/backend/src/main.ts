@@ -9,7 +9,7 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   const config = new DocumentBuilder()
-    .setTitle('Backend API')
+    .setTitle('Backend API1')
     .setDescription('The Backend API description')
     .setVersion('1.0')
     .build();
