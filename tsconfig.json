@@ -55,5 +55,8 @@
         "libs/events/src/*"
       ]
     }
+  },
+  "watchOptions": {
+    "watchFile": "fixedPollingInterval"
   }
 }
