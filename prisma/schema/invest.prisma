@@ -1,0 +1,17 @@
+enum TYPE_INVESTMENT {
+    A
+}
+model Investment {
+  id String   @id @default(uuid())
+  category      String
+  level         Int      @default(1)
+  coins_spent   Decimal
+  type          TYPE_INVESTMENT 
+}
+
+model UserToInvestment {
+    id String   @id @default(uuid())
+    investment_id String
+    user_id       String
+    invested_at   DateTime @default(now())
+}

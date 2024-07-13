@@ -1,0 +1,19 @@
+enum BOOST_TYPE {
+    DAILY
+    MULTITAP
+    ENERGY_LIMIT
+}
+model Boost {
+    id String @id @default(uuid())
+    booster_type BOOST_TYPE
+    level Int
+    level_up_cost BigInt
+    spec Int
+    name String
+    description String
+}
+model UserToBoost {
+    id String @id @default(uuid())
+    user_id     String
+    createdAt DateTime   @default(now())
+}

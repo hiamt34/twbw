@@ -1,9 +1,22 @@
+enum Role {
+  ADMIN
+  CUSTOMER
+}
 model User {
-  id        Int        @id @default(autoincrement())
+  id        String        @id @default(uuid())
   email     String     @unique
   name      String?
+  idTele    String
   password  String
+
+  level     Int       @default(1)
+  coins     BigInt    @default(0)
+  energyLimit Int       @default(3000)
+  coinsPerhour Int   @default(0)
+  coinsPerTap Int    @default(1)
+
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
-  UserRole  UserRole[]
+  role      Role       @default(CUSTOMER)
 }
+
